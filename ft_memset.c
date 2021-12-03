@@ -9,15 +9,16 @@
 /*   Updated: 2021/11/25 14:04:20 by ylaarous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+
+#include "libft.h"
 
 void	*ft_memset(void *pointer, int value, size_t count)
 {
-	char	v;
-	char	*r;
-	size_t	i;
+	unsigned char	v;
+	char			*r;
+	size_t			i;
 
-	v = (char) value;
+	v = (unsigned char) value;
 	r = (char *) pointer;
 	i = 0;
 	while (i < count)
